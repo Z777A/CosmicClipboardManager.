@@ -1,0 +1,10 @@
+[Unit]
+Description=Cliphist clipboard history
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/wl-paste --watch /usr/local/bin/cliphist -max-items 25 store
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
