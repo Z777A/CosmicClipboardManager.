@@ -29,6 +29,7 @@ cp assets/cosmic-clipboard-manager.svg ~/.local/share/icons/hicolor/scalable/app
 
 mkdir -p ~/.local/share/applications
 cp assets/cosmic-clipboard-manager.desktop ~/.local/share/applications/
+sed -i "s|Exec=cosmic-clipboard-manager|Exec=$HOME/.local/bin/cosmic-clipboard-manager|g" ~/.local/share/applications/cosmic-clipboard-manager.desktop
 
 # 3. Setup Systemd Services
 mkdir -p ~/.config/systemd/user

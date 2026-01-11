@@ -2,7 +2,7 @@
 Name=Clipboard Manager
 GenericName=Clipboard Manager
 Comment=Manage clipboard history
-Exec=/home/z777a/.local/bin/cosmic-clipboard-manager
+Exec=cosmic-clipboard-manager
 Icon=cosmic-clipboard-manager
 Type=Application
 Categories=Utility;GTK;
